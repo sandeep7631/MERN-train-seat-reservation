@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #b53535;
+  margin-bottom: 20px;
+}
+
+.seat-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.available {
+  background-color: #90EE90;
+}
+
+.available:hover {
+  background-color: #32CD32;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  background-color: #004494;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.booked {
+  background-color: #FF6347;
+  cursor: not-allowed;
+}
+
+.book-button {
+  background-color: #28a745;
+}
+
+.book-button:hover {
+  background-color: #218838;
+}
+
+.reset-button {
+  background-color: #dc3545;
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 10px;
+}
+
+.validation-message {
+  color: #dc3545; 
+  font-size: 0.9rem;
+  margin-top: 10px; 
+}
+
+
+@media (max-width: 600px) {
+  .seat-layout {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .seat {
+    width: 35px;
+    height: 35px;
+  }
+}
+
